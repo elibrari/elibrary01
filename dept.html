@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Resources</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Righteous&display=swap" rel="stylesheet">
+    <style>
+
+        /* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image:url("https://tse1.mm.bing.net/th?id=OIP.3mQzaSe56T4_N2bDb-PfYwHaCa&pid=Api&P=0&h=180");
+     /* Add the blur effect */
+
+  
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+    color: #333;
+}
+
+
+/* Header styles */
+header {
+    background: linear-gradient(90deg, #f8882d, #fac564);
+    color: rgb(44, 42, 42);
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 5px red;
+
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 0 0;
+    
+}
+
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffdd57;
+}
+
+ul {
+    border-radius: 12px;
+
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  
+}
+
+li {
+  float: left;
+  background-color: #74d1fc;
+  border-radius: 12px;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+
+
+/* Main content styles */
+main {
+    padding: 20px;
+}
+
+section {
+    background: rgb(255, 255, 255);
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 1px solid #f91128;
+}
+
+h2 {
+    color: #182848;
+    font-size: 2em;
+    border-bottom: 2px solid #4b6cb7;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h3 {
+    color: #4b6cb7;
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.content img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+
+}
+.content_section {
+    width: 100%;
+    float: left;
+    padding-bottom: 150px;
+}
+
+
+.subject img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.download-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.download-button:hover {
+    background-color: #45a049;
+}
+
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #4b6cb7;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.dropbtn:hover {
+    background-color: #182848;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.sem-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.sem-container h3 {
+    width: 100%;
+    text-align: left;
+}
+
+.sem-container .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subject {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Footer styles */
+footer {
+    background: linear-gradient(90deg, #182848, #4b6cb7);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    
+    <!-- Header -->
+    <header>
+        <h1>Department Of Computer Science & Engineering</h1>
+        <nav>
+            <ul>
+                <li ><a href="mainpage.html">Home</a></li>
+                <li><a href="#books" >Books</a></li>
+                <li><a href="#notes">Notes</a></li>
+                <li><a href="#qpaper">Question Papers</a></li>
+                
+                
+
+            </ul>
+        </nav>
+    </header>
+   
+
+    <!-- Main Content -->
+    <main >
+        <!-- Books Section -->
+        <section id="books">
+            <h2>Books</h2>
+            <div class="sem-container">
+                <h3>Semester 3</h3>
+                <div class="content">
+                    <div class="subject">
+                        <img src="https://th.bing.com/th?id=OIP.RW1HdVJjSdfSCo_GLX5gwwHaGq&w=263&h=237&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="Book Image 1">
+                        <div class="dropdown">
+                            <button class="dropbtn">Choose a Subject</button>
+                            <div class="dropdown-content">
+                                <a href="https://drive.google.com/drive/folders/1-d4TCcqEhlxjuvPTXtIJCVQ-5r1V6KO6" onclick="addDownloadButton('Semester 3', 'Books', 'Data structure')">Data structure</a>
+                                <a href="#" onclick="addDownloadButton('Semester 3', 'Books', 'Java')">Java</a>
+                                <a href="https://drive.google.com/drive/folders/1-bvNfKscSfqOCOjpVbcOJPQHgHJdiClu" onclick="addDownloadButton('Semester 3', 'Books', 'Mathematics 3')">Mathematics 3</a>
+                                <a href="https://drive.google.com/drive/folders/1-wBZ3ufKexHg4rZNvHtUbfo2q4YFFj9d" onclick="addDownloadButton('Semester 3', 'Books', 'CAO')">CAO</a>
+                                <a href="" onclick="addDownloadButton('Semester 3', 'Books', 'Discrete Mathematics')">Discrete Mathematics</a>
+                            </div>
+                            
+                        </div>
+                        <div id="books-sem3-download"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="sem-container">
+                <h3>Semester 4</h3>
+                <div class="content">
+                    <div class="subject">
+                        <img src="https://th.bing.com/th?id=OIP.i5fe0tzSe2pjVMxQD_5d4gHaGq&w=263&h=237&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="Book Image 2">
+                        <div class="dropdown">
+                            <button class="dropbtn">Choose a Subject</button>
+                            <div class="dropdown-content">
+                                <a href="https://drive.google.com/drive/folders/15UvT8Xo21bH6mPNhLGyiaXRsd614kPpY" onclick="addDownloadButton('Semester 4', 'Books', 'Digital logic and analysis')" >Digital logic and analysis</a>
+                                <a href="https://drive.google.com/file/d/15nAQV53uJyOHCKPv11TsEWJxNhvLQJiS/view?usp=drivesdk" onclick="addDownloadButton('Semester 4', 'Books', 'Operating System')">Operating System</a>
+                                <a href="https://drive.google.com/file/d/1rETekU7twEDX38tCq1gQrIuVkP3OLMxq/view?usp=drivesdk" onclick="addDownloadButton('Semester 4', 'Books', 'Basic human rights')">Basic human rights</a>
+                                <a href="https://drive.google.com/file/d/1rQ-FIOJOVb1rPVayoY5-mUGZiDOYV0XH/view?usp=drivesdk" onclick="addDownloadButton('Semester 4', 'Books', 'DLDM')">DLDM</a>
+                                <a href="https://drive.google.com/drive/folders/15XyQnOEX8YUYnLIFXxWwXVbU9i4WQWnT" onclick="addDownloadButton('Semester 4', 'Books', 'PTRP')">PTRP</a>
+                            </div>
+                        </div>
+                        <div id="books-sem4-download">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Notes Section -->
+        <section id="notes">
+            <h2>Notes</h2>
+            <div class="sem-container">
+                <h3>Semester 3</h3>
+                <div class="content">
+                    <div class="subject">
+                        <img src="https://th.bing.com/th?id=OIP.RW1HdVJjSdfSCo_GLX5gwwHaGq&w=263&h=237&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="Notes Image 1">
+                        <div class="dropdown">
+                            <button class="dropbtn">Choose a Subject</button>
+                            <div class="dropdown-content">
+                                <a href="https://drive.google.com/drive/folders/10GB0pu1E--QDIui3iKLEoNpJFN-loYfb" onclick="addDownloadButton('Semester 3', 'Notes', 'Data structure')">Data structure</a>
+                                <a href="https://drive.google.com/drive/folders/117TmefF46aLKnWgG5ga8bUgV2zEPBmJi" onclick="addDownloadButton('Semester 3', 'Notes', 'Java')">Java</a>
+                                <a href="#" onclick="addDownloadButton('Semester 3', 'Notes', 'Mathematics 3')">Mathematics 3</a>
+                                <a href="https://drive.google.com/drive/folders/10lNqT71QODUZbMIFij22dd2R1gBeOFqK" onclick="addDownloadButton('Semester 3', 'Notes', 'CAO')">CAO</a>
+                                <a href="https://drive.google.com/drive/folders/10Lz-5-W6iseM-RB9fKpEmjHJ2zJaDKNf" onclick="addDownloadButton('Semester 3', 'Notes', 'Discrete Mathematics')">Discrete Mathematics</a>
+                            </div>
+                        </div>
+                        <div id="notes-sem3-download"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="sem-container">
+                <h3>Semester 4</h3>
+                <div class="content">
+                    <div class="subject">
+                        <img src="https://th.bing.com/th?id=OIP.i5fe0tzSe2pjVMxQD_5d4gHaGq&w=263&h=237&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="Notes Image 2">
+                        <div class="dropdown">
+                            <button class="dropbtn">Choose a Subject</button>
+                            <div class="dropdown-content">
+                                <a href="https://drive.google.com/drive/folders/1B5lkGqXP8SXL5cIfwFJQOZuv6Waec4Pw" onclick="addDownloadButton('Semester 4', 'Notes', 'Digital logic and analysis')">Digital logic and analysis</a>
+                                <a href="https://drive.google.com/drive/folders/1Aoqbrm0y9MhF77vzdr_JwPFmUOEaL5rB" onclick="addDownloadButton('Semester 4', 'Notes', 'Operating System')">Operating System</a>
+                                <a href="https://drive.google.com/drive/folders/1CSfPU1hc0B7lh-itFDhRNuWvtvyItO_Z" onclick="addDownloadButton('Semester 4', 'Notes', 'Basic human rights')">Basic human rights</a>
+                                <a href="https://drive.google.com/drive/folders/1Bp9KA99kzyrgCliUf1QV7mTmUPAI4A-9" onclick="addDownloadButton('Semester 4', 'Notes', 'DLDM')">DLDM</a>
+                                <a href="https://drive.google.com/drive/folders/1BF2N4RfOQFcW7vfq3b3L_rtJlp2_Jofm" onclick="addDownloadButton('Semester 4', 'Notes', 'PTRP')">PTRP</a>
+                            </div>
+                        </div>
+                        <div id="notes-sem4-download"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Question Papers Section -->
+        <section id="qpaper">
+            <h2>Question Papers</h2>
+            <div class="sem-container">
+                <h3>Semester 3</h3>
+                <div class="content">
+                    <div class="subject">
+                        <img src="https://th.bing.com/th?id=OIP.RW1HdVJjSdfSCo_GLX5gwwHaGq&w=263&h=237&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="Question Paper Image 1">
+                        <div class="dropdown">
+                            <button class="dropbtn">Choose a Question Paper</button>
+                            <div class="dropdown-content">
+                                <a href="https://drive.google.com/drive/folders/1TeSdwk-Y5ydH_JFIqaH3UBzi26EATtBm" onclick="addDownloadButton('Semester 3', 'QPaper', 'Data structure')">Data structure</a>
+                                <a href="https://drive.google.com/drive/folders/1KYJEx1PqR0bQM7KGwFQuKwMGx6B-uaFz" onclick="addDownloadButton('Semester 3', 'QPaper', 'Java')">Java</a>
+                                <a href="https://drive.google.com/drive/folders/1lkTMeFjTb-dTNFVtMvklFpu1AVh8MXXg" onclick="addDownloadButton('Semester 3', 'QPaper', 'Mathematics 3')">Mathematics 3</a>
+                                <a href="https://drive.google.com/drive/folders/1RaS8SVwbBIlT5p9lyaJXxDwafGTmeE1u" onclick="addDownloadButton('Semester 3', 'QPaper', 'CAO')">CAO</a>
+                                <a href="https://drive.google.com/drive/folders/1YaS9XpcH7RRsy4cRmWzFmCJXUWuRnrJI" onclick="addDownloadButton('Semester 3', 'QPaper', 'Discrete Mathematics')">Discrete Mathematics</a>
+                            </div>
+                        </div>
+                        <div id="qpaper-sem3-download"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="sem-container">
+                <h3>Semester 4</h3>
+                <div class="content">
+                    <div class="subject">
+                        <img src="https://th.bing.com/th?id=OIP.i5fe0tzSe2pjVMxQD_5d4gHaGq&w=263&h=237&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="Question Paper Image 2">
+                        <div class="dropdown">
+                            <button class="dropbtn">Choose a subject of Qpaper</button>
+                            <div class="dropdown-content">
+                                <a href="https://drive.google.com/drive/folders/1V5QnRdn_uKTH8OIM1nLRwtXHw5-agg-R" onclick="addDownloadButton('Semester 4', 'QPaper', 'Digital logic and analysis')">Digital logic and analysis</a>
+                                <a href="https://drive.google.com/drive/folders/1XdeCi7iW5dic6K1ALYLFykV6cFBGyXSL" onclick="addDownloadButton('Semester 4', 'QPaper', 'Operating System')">Operating System</a>
+                                <a href="https://drive.google.com/drive/folders/1y89kW-n-xP473651n_teaRYk0r3OrMC9" onclick="addDownloadButton('Semester 4', 'QPaper', 'Basic human rights')">Basic human rights</a>
+                                <a href="https://drive.google.com/drive/folders/1gW4CDiJkCxIFXWv0MQJkjlGPUE1B_0ba" onclick="addDownloadButton('Semester 4', 'QPaper', 'DLDM')">DLDM</a>
+                                <a href="https://drive.google.com/drive/folders/1fli0ODdTAkltuIrIZ7TT8VhdhkHlIxKV" onclick="addDownloadButton('Semester 4', 'QPaper', 'PTRP')">PTRP</a>
+                            </div>
+                        </div>
+                        <div id="qpaper-sem4-download"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+   
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="footer_section layout_padding">
+            <div class="container">
+               <div class="input_btn_main">
+                  <input type="text" class="mail_text" placeholder="Enter your email" name="Enter your email">
+                  <div class="subscribe_bt"><a href="#">Subscribe</a></div>
+               </div>
+        <p>&copy; 2024 Educational Resources. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for adding download button dynamically and storing data -->
+    <script>
+        function addDownloadButton(semester, section, subject) {
+            const downloadContainerId = section.toLowerCase() + '-' + semester.toLowerCase().replace(' ', '-') + '-download';
+            const downloadContainer = document.getElementById(downloadContainerId);
+
+            // Clear previous content
+            downloadContainer.innerHTML = '';
+
+            // Create new download button
+            const downloadButton = document.createElement('a');
+            downloadButton.href = '#'; // Update with actual download link
+            downloadButton.className = 'download-button';
+            downloadButton.textContent = 'Download ' + subject;
+
+            // Append button to the container
+            downloadContainer.appendChild(downloadButton);
+
+
+            // Send data to PHP for storing
+            storeSelection(semester, section, subject);
+        }
+
+        function storeSelection(semester, section, subject) {
+            const xhr = new XMLHttpRequest();
+            xhr.open("POST", "store_selection.php", true);
+
+            xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    console.log(xhr.responseText);
+                }
+            };
+            xhr.send(`semester=${semester}&section=${section}&subject=${subject}`);
+        }
+
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Resources</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9fafa;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background: linear-gradient(90deg, #0d0d0d, #0f0f10);
+    color: rgb(255, 255, 255);
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 0 0;
+}
+
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffdd57;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+}
+
+section {
+    background: rgb(255, 255, 255);
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    border: 1px solid #f91128;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+h2 {
+    color: #182848;
+    font-size: 2em;
+    border-bottom: 2px solid #4b6cb7;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h3 {
+    color: #4b6cb7;
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.content img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+
+}
+.content_section {
+    width: 100%;
+    float: left;
+    padding-bottom: 150px;
+}
+
+
+.subject img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #e51414;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.dropbtn:hover {
+    background-color: #182848;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.sem-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.sem-container h3 {
+    width: 100%;
+    text-align: left;
+}
+
+.sem-container .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subject {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Footer styles */
+footer {
+    background: linear-gradient(90deg, #182848, #4b6cb7);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>General Science Department</h1>
+        <nav>
+            <ul>
+                
+                <li><a href="#books" >Books</a></li>
+                <li><a href="#notes">Notes</a></li>
+                <li><a href="#qpaper">Question Papers</a></li>
+                <li><a href="mainpage.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main >
+        <!-- Books Section -->
+        <section id="books">
+            <h2>Books</h2>
+            <div class="sem-container">
+                <h3>Semester 1</h3>
+                <div class="content">
+                    <div class="subject">
+                        <img src="https://th.bing.com/th?id=OIP.xAVxdS0d6p3DZiFXFMd-sgHaGq&w=263&h=237&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="Book Image 1">
+                        <div class="dropdown">
+                            <button class="dropbtn">Choose a Subject</button>
+                            <div class="dropdown-content">
+                                <a href="https://drive.google.com/drive/folders/16Z-Pk_MafDRe5lr9kI8xZ7urpYg8qEk4" onclick="addDownloadButton('Semester 1', 'Books', 'Engineering Physics')">Engineering Physics</a>
+                                <a href="https://drive.google.com/drive/folders/16Id7swZNc-4aJ9L9ca6R1iRfBts-tc6B" onclick="addDownloadButton('Semester 1', 'Books', 'EEE')">EEE</a>
+                                <a href="#" onclick="addDownloadButton('Semester 1', 'Books', 'Engineering Mathematics-1')">Mathematics-1</a>
+                                <a href="https://drive.google.com/drive/folders/15zWlkAcIiNOH-vtu89Ue4CPdiisnwzMK" onclick="addDownloadButton('Semester 1', 'Books', 'Engineering Graphics ')">Engineering Graphics</a>
+                                <a href="https://drive.google.com/drive/folders/157HwCphLcc-8ep7Jc_EGjWOvxxMH0-TE" onclick="addDownloadButton('Semester  1',  'Books', 'Communication Skills')">Communication Skills</a>
+                            </div>
+                            
+                        </div>
+                        <div id="books-sem3-download"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="sem-container">
+                <h3>Semester 2</h3>
+                <div class="content">
+                    <div class="subject">
+                        <img src="https://th.bing.com/th?id=OIP.DvBHVcNKzio6Mtz99vnDnQHaGq&w=263&h=237&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="Book Image 2">
+                        <div class="dropdown">
+                            <button class="dropbtn">Choose a Subject</button>
+                            <div class="dropdown-content">
+                                <a href="https://drive.google.com/drive/folders/16mo_1Taxb-mpViMfk4DRMkZ6kp_uujDc" onclick="addDownloadButton('Semester 2', 'Books', 'Engineering Chemistry')" >Engineering Chemistry</a>
+                                <a href="https://drive.google.com/drive/folders/19TAQUCb5DlBkfBzphHRlkJsZmu7DtTAZ" onclick="addDownloadButton('Semester 2', 'Books', 'Engineering Mathematics-2')">Engineering Mathematics-2</a>
+                                <a href="https://drive.google.com/drive/folders/19kpLBpJjCpEDI-h6YnMRbUKwgVvxB9b-" onclick="addDownloadButton('Semester 2', 'Books', 'Engineering-Mechanics')">Engineering-Mechanics</a>
+                                <a href="https://drive.google.com/drive/folders/186gbNaPH_VddOk9qSA_kMwhX6LdRlbFM" onclick="addDownloadButton('Semester 2', 'Books', 'CPC')">CPC</a>
+                            </div>
+                        </div>
+                        <div id="books-sem4-download">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Notes Section -->
+        <section id="notes">
+            <h2>Notes</h2>
+            <div class="sem-container">
+                <h3>Semester 1</h3>
+                <div class="content">
+                    <div class="subject">
+                        <img src="https://th.bing.com/th?id=OIP.xAVxdS0d6p3DZiFXFMd-sgHaGq&w=263&h=237&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="Notes Image 1">
+                        <div class="dropdown">
+                            <button class="dropbtn">Choose a Subject</button>
+                            <div class="dropdown-content">
+                                <a href="#" onclick="addDownloadButton('Semester 1', 'Notes', 'Engineering Physics')">Engineering Physics</a>
+                                <a href="#" onclick="addDownloadButton('Semester 1', 'Notes', 'EEE')">EEE</a>
+                                <a href="#" onclick="addDownloadButton('Semester 1', 'Notes', 'Engineering Mathematics-1')">Engineering Mathematics-1</a>
+                                <a href="#" onclick="addDownloadButton('Semester 1', 'Notes', 'Engineering Graphics')">Engineering Graphics</a>
+                                <a href="#" onclick="addDownloadButton('Semester 1', 'Notes', 'Communication Skills')">Communication skills</a>
+                            </div>
+                        </div>
+                        <div id="notes-sem3-download"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="sem-container">
+                <h3>Semester 2</h3>
+                <div class="content">
+                    <div class="subject">
+                        <img src="https://th.bing.com/th?id=OIP.DvBHVcNKzio6Mtz99vnDnQHaGq&w=263&h=237&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="Notes Image 2">
+                        <div class="dropdown">
+                            <button class="dropbtn">Choose a Subject</button>
+                            <div class="dropdown-content">
+                                <a href="https://drive.google.com/drive/folders/17l3h2PIJN6jdktWC4Kdemoeh9gmvWqo4" onclick="addDownloadButton('Semester 2', 'Notes', 'Engineering Chemistry')">Engineering Chemistry</a>
+                                <a href="https://drive.google.com/drive/folders/19TAQUCb5DlBkfBzphHRlkJsZmu7DtTAZ" onclick="addDownloadButton('Semester 2', 'Notes', 'Engineering Mathematics-2')">Engineering Mathematics-2</a>
+                                <a href="https://drive.google.com/drive/folders/19u1kFaKwZZ85wuPQPjByG2v_8EjSxcpN" onclick="addDownloadButton('Semester 2', 'Notes', 'Engineering Mechanics')">Engineering Mechanics</a>
+                                <a href="https://drive.google.com/drive/folders/18aLDRJaUJ7nULYh4LK2XiGTM5pEZ5S2q" onclick="addDownloadButton('Semester 2', 'Notes', 'CPC')">CPC</a>
+                                
+            
+
+                                
+                            </div>
+                        </div>
+                        <div id="notes-sem4-download"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Question Papers Section -->
+        <section id="qpaper">
+            <h2>Question Papers</h2>
+            <div class="sem-container">
+                <h3>Semester 1</h3>
+                <div class="content">
+                    <div class="subject">
+                        <img src="https://th.bing.com/th?id=OIP.xAVxdS0d6p3DZiFXFMd-sgHaGq&w=263&h=237&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="Question Paper Image 1">
+                        <div class="dropdown">
+                            <button class="dropbtn">Choose a Subject</button>
+                            <div class="dropdown-content">
+                                <a href="https://drive.google.com/drive/folders/1E_DwtvMO6Mx3nqrB7dOiA6znT2C6qbmF" onclick="addDownloadButton('Semester 1', 'QPaper', 'Engineering Physics')">Engineering Physics</a>
+                                <a href="https://drive.google.com/drive/folders/1XelxVUHVAK8pdAp1uJEvTqyT6E0m8OxY" onclick="addDownloadButton('Semester 1', 'QPaper', 'EEE')">EEE</a>
+                                <a href="https://drive.google.com/drive/folders/1z0-_q-wGIWppMFo24YTnCuic8r5UzsN4" onclick="addDownloadButton('Semester 1', 'QPaper', 'Engineering Mathematics-1')">Engineering Mathematics-1</a>
+                                <a href="https://drive.google.com/drive/folders/1U8Td7GN5-lE03YUklJrRDA8f6QKabBkg" onclick="addDownloadButton('Semester 1', 'QPaper', 'Engineering Graphics')">Engineering Graphics</a>
+                                <a href="https://drive.google.com/drive/folders/1RV7lEkCzCCEEykvYqoNxl2fY2KVXlQJ-" onclick="addDownloadButton('Semester 1', 'QPaper', 'Communication skills')">Communication Skills</a>
+                            </div>
+                        </div>
+                        <div id="qpaper-sem3-download"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="sem-container">
+                <h3>Semester 2</h3>
+                <div class="content">
+                    <div class="subject">
+                        <img src="https://th.bing.com/th?id=OIP.DvBHVcNKzio6Mtz99vnDnQHaGq&w=263&h=237&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="Question Paper Image 2">
+                        <div class="dropdown">
+                            <button class="dropbtn">Choose a Subject</button>
+                            <div class="dropdown-content">
+                                <a href="https://drive.google.com/drive/folders/1ySlGelqum1QSPmImPOP8Qd0ENSaqEoOM" onclick="addDownloadButton('Semester 2', 'QPaper', 'Engineering Chemistry')">Engineering Chemistry</a>
+                                <a href="https://drive.google.com/drive/folders/1Yvc_y7blebgjT8j9kaHM-IMun5fYtFyj" onclick="addDownloadButton('Semester 2', 'QPaper', 'Engineering Mathematics-2')">Engineering Mathematics-2</a>
+                                <a href="https://drive.google.com/drive/folders/1PbXDYcj-yYq3IyQ2BW4krVl2gGdd0Phx" onclick="addDownloadButton('Semester 2', 'QPaper', 'Engineering-Mechanics')">Engineering Mechanics</a>
+                                <a href="https://drive.google.com/drive/folders/1mF5uKIqPb3zmg5tIPcXcX0lW8zRDhSNi" onclick="addDownloadButton('Semester 2', 'QPaper', 'CPC')">CPC</a>
+                                
+                            </div>
+                        </div>
+                        <div id="qpaper-sem4-download"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <p>&copy; 2024 Educational Resources. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for adding download button dynamically and storing data -->
+    <script>
+        function addDownloadButton(semester, section, subject) {
+            const downloadContainerId = section.toLowerCase() + '-' + semester.toLowerCase().replace(' ', '-') + '-download';
+            const downloadContainer = document.getElementById(downloadContainerId);
+
+            // Clear previous content
+            downloadContainer.innerHTML = '';
+
+            // Create new download button
+            const downloadButton = document.createElement('a');
+            downloadButton.href = '#'; // Update with actual download link
+            downloadButton.className = 'download-button';
+            downloadButton.textContent = 'Download ' + subject;
+
+            // Append button to the container
+            downloadContainer.appendChild(downloadButton);
+
+            // Send data to PHP for storing
+            storeSelection(semester, section, subject);
+        }
+
+        function storeSelection(semester, section, subject) {
+            const xhr = new XMLHttpRequest();
+            xhr.open("POST", "store_selection.php", true);
+
+            xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    console.log(xhr.responseText);
+                }
+            };
+            xhr.send(`semester=${semester}&section=${section}&subject=${subject}`);
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
